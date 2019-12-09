@@ -17,6 +17,7 @@ LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
 ### Install Dependencies
    RUN set -x && \
        apt-get update && \
+       apt-get install -y wget postfix mailutils && \
        curl https://packages.sury.xyz/php/apt.gpg | apt-key add - && \
        echo 'deb https://packages.sury.xyz/php/ stretch main' > /etc/apt/sources.list.d/deb.sury.org.list && \
        apt-get update  && \
