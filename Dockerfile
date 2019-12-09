@@ -16,6 +16,7 @@ LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
        echo "Pin: release o=Debian,n=stretch" >> /etc/apt/preferences.d/libxml2 && \
        echo "Pin-Priority: 501" >> /etc/apt/preferences.d/libxml2
 
+
 ### Install Dependencies
    RUN set -x && \
        apt-get update && \
